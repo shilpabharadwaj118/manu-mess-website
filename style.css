@@ -23,6 +23,7 @@ body {
     background:
         linear-gradient(rgba(45, 12, 8, 0.78), rgba(45, 12, 8, 0.75)),
         url("images/ragi-mudde-bg.jpg") center/cover no-repeat;
+
     color: white;
 }
 
@@ -83,18 +84,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* HOTEL QUOTE */
-
-.hotel-quote {
-    font-size: 16px !important;
-    font-style: italic;
-    color: #ffe4a8;
-    max-width: 650px;
-    margin: 12px auto 25px !important;
-    padding: 0 15px;
-    line-height: 1.8;
-}
-
 .main-btn {
     display: inline-block;
     background: #e0aa45;
@@ -103,12 +92,6 @@ body {
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
-}
-
-.main-btn:hover {
-    background: #f7d58a;
-    transform: translateY(-2px);
 }
 
 /* GENERAL SECTIONS */
@@ -176,13 +159,10 @@ body {
     transform: translateY(-5px);
 }
 
-/* REDUCED FOOD IMAGE SIZE */
-
 .food-card img {
     width: 100%;
-    height: 140px;
+    height: 190px;
     object-fit: cover;
-    display: block;
 }
 
 .food-card h3 {
@@ -256,15 +236,10 @@ body {
 
 .gallery-grid img {
     width: 100%;
-    height: 150px;
+    height: 220px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    transition: transform 0.3s;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.03);
 }
 
 /* QR */
@@ -274,24 +249,26 @@ body {
 }
 
 .qr-placeholder {
-    width: 280px;
-    max-width: 100%;
-    min-height: 280px;
-    border: 2px dashed #9a5726;
-    background: white;
+    width: 210px;
+    height: 210px;
+    border: 3px dashed #9a5726;
     margin: 25px auto;
     border-radius: 12px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
 
-.qr-placeholder img {
-    width: 240px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+.qr-placeholder span {
+    font-size: 55px;
+    font-weight: bold;
+    color: #7b2619;
+}
+
+.qr-placeholder p {
+    font-size: 12px;
 }
 
 /* REVIEWS */
@@ -400,10 +377,6 @@ footer {
     .nav-links {
         gap: 12px;
     }
-
-    .food-card img {
-        height: 130px;
-    }
 }
 
 /* MOBILE */
@@ -443,10 +416,6 @@ footer {
         font-size: 18px;
     }
 
-    .hotel-quote {
-        font-size: 14px !important;
-    }
-
     .section {
         padding: 45px 5%;
     }
@@ -461,7 +430,7 @@ footer {
     }
 
     .food-card img {
-        height: 110px;
+        height: 145px;
     }
 
     .food-card h3 {
@@ -478,16 +447,7 @@ footer {
     }
 
     .gallery-grid img {
-        height: 115px;
-    }
-
-    .qr-placeholder {
-        width: 250px;
-        min-height: 250px;
-    }
-
-    .qr-placeholder img {
-        width: 210px;
+        height: 145px;
     }
 
     .floating-whatsapp {
