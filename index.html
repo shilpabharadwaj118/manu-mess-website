@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="kn">
 <head>
@@ -5,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ಮನು ಮೆಸ್ | Manu Mess</title>
+
+    <meta name="description" content="ಮನು ಮೆಸ್ - ದಕ್ಷಿಣ ಭಾರತೀಯ ಉಪಹಾರ, ತಿಂಡಿಗಳು ಮತ್ತು ಮಧ್ಯಾಹ್ನದ ಊಟ. ಮನೆಯ ರುಚಿ, ಮನದ ತೃಪ್ತಿ.">
 
     <link rel="stylesheet" href="style.css">
 
@@ -28,6 +31,7 @@
             <a href="#lunch">ಮಧ್ಯಾಹ್ನದ ಊಟ</a>
             <a href="#special">ಇಂದಿನ ವಿಶೇಷ</a>
             <a href="#gallery">ಚಿತ್ರಗಳು</a>
+            <a href="#qr">QR ಕೋಡ್</a>
             <a href="#about">ನಮ್ಮ ಬಗ್ಗೆ</a>
             <a href="#contact">ಸಂಪರ್ಕ</a>
         </div>
@@ -150,7 +154,7 @@
 
     <a class="whatsapp-btn"
        href="https://wa.me/919449184761?text=ನಮಸ್ಕಾರ%2C%20ಇಂದಿನ%20ಆಹಾರದ%20ಲಭ್ಯತೆ%20ತಿಳಿಸಿ."
-       target="_blank">
+       target="_blank" rel="noopener">
         WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ
     </a>
 
@@ -166,7 +170,6 @@
     <div class="gallery-grid">
 
         <img src="images/idli.jpg" alt="Idli">
-        <img src="images-missing-placeholder.jpg" alt="Food photo" onerror="this.style.display='none'">
         <img src="images/masala-dosa.jpg" alt="Masala dosa">
         <img src="images/ragi-mudde-meals.png" alt="Ragi mudde meals">
         <img src="images/chapati-meals.png" alt="Chapati meals">
@@ -177,18 +180,42 @@
 </section>
 
 
-<!-- QR CODE -->
+<!-- LIVE WEBSITE QR CODE -->
 
-<section class="section qr-section">
+<section id="qr" class="section qr-section">
 
     <h2 class="section-title">📱 ನಮ್ಮ ಮೆನುವನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ</h2>
 
-    <p>ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ಲೈವ್ ಆದ ನಂತರ ಇಲ್ಲಿ ನಿಮ್ಮ ಮೆನು QR ಕೋಡ್ ಕಾಣಿಸುತ್ತದೆ.</p>
+    <p>
+        ಮನು ಮೆಸ್‌ನ ಸಂಪೂರ್ಣ ಮೆನು, ಆಹಾರದ ಬೆಲೆ ಮತ್ತು ವಿವರಗಳನ್ನು ನೋಡಲು
+        ಕೆಳಗಿನ QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.
+    </p>
 
     <div class="qr-placeholder">
-        <span>QR</span>
-        <p>ವೆಬ್‌ಸೈಟ್ ಲಿಂಕ್ ಸೇರಿಸಿದ ನಂತರ QR ಕೋಡ್ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.</p>
+
+        <img
+            id="websiteQRCode"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fshilpabharadwaj118.github.io%2Fmanu-mess-website%2F"
+            alt="Manu Mess Website QR Code"
+            width="250"
+            height="250"
+            loading="eager"
+        >
+
     </div>
+
+    <p class="small-note">
+        Scan ಮಾಡಿ ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ವೀಕ್ಷಿಸಿ ❤️
+    </p>
+
+    <a
+        class="main-btn"
+        href="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https%3A%2F%2Fshilpabharadwaj118.github.io%2Fmanu-mess-website%2F"
+        target="_blank"
+        rel="noopener"
+    >
+        QR ಕೋಡ್ ತೆರೆಯಿರಿ
+    </a>
 
 </section>
 
@@ -247,12 +274,14 @@
 
     <a href="https://wa.me/919449184761"
        target="_blank"
+       rel="noopener"
        class="whatsapp-btn">
         WhatsApp ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ
     </a>
 
     <a href="https://maps.app.goo.gl/nBRWCxW6zm8jfegZ9"
        target="_blank"
+       rel="noopener"
        class="map-btn">
         Google Maps ನಲ್ಲಿ ಸ್ಥಳ ನೋಡಿ
     </a>
@@ -265,6 +294,7 @@
 <a class="floating-whatsapp"
    href="https://wa.me/919449184761"
    target="_blank"
+   rel="noopener"
    aria-label="WhatsApp">
     ☎
 </a>
