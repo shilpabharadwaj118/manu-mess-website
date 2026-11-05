@@ -226,22 +226,6 @@ body {
     margin-top: 15px;
 }
 
-/* GALLERY */
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-}
-
 /* QR */
 
 .qr-section {
@@ -439,15 +423,6 @@ footer {
 
     .food-card p {
         font-size: 12px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    .gallery-grid img {
-        height: 145px;
     }
 
     .floating-whatsapp {
