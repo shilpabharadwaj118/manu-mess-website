@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans Kannada', sans-serif;
+    background: #fff8ed;
+    color: #402019;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+.hero {
+    min-height: 520px;
+    background:
+        linear-gradient(rgba(45, 12, 8, 0.78), rgba(45, 12, 8, 0.75)),
+        url("images/ragi-mudde-bg.jpg") center/cover no-repeat;
+
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: rgba(45, 12, 8, 0.8);
+}
+
+.navbar h2 {
+    color: #f7d58a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f7d58a;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    color: #f7d58a;
+}
+
+.hero-content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: #e0aa45;
+    color: #38140d;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #711e16;
+    margin-bottom: 30px;
+}
+
+.center-text {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* FILTERS */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    border: 1px solid #8c3928;
+    background: white;
+    color: #70251a;
+    padding: 9px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #70251a;
+    color: white;
+}
+
+/* FOOD GRID */
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.food-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(65, 25, 15, 0.12);
+    padding-bottom: 18px;
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    font-size: 17px;
+    margin: 12px 8px 5px;
+}
+
+.food-card p {
+    font-size: 13px;
+    padding: 0 12px;
+}
+
+.price {
+    color: #a45b13;
+}
+
+.availability {
+    display: inline-block;
+    background: #fff0d2;
+    color: #78420d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/* LUNCH */
+
+.lunch-section {
+    background: #f5e9d8;
+}
+
+/* SPECIAL */
+
+.special-section {
+    background: #fff0d2;
+}
+
+.special-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border: 2px solid #d9a44d;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+}
+
+.special-card h3 {
+    color: #8b2e1d;
+    font-size: 24px;
+}
+
+.special-card p {
+    margin-top: 10px;
+}
+
+.small-note {
+    font-size: 13px;
+    color: #805b48;
+    margin-top: 15px;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* QR */
+
+.qr-section {
+    background: #f5e9d8;
+}
+
+.qr-placeholder {
+    width: 210px;
+    height: 210px;
+    border: 3px dashed #9a5726;
+    margin: 25px auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.qr-placeholder span {
+    font-size: 55px;
+    font-weight: bold;
+    color: #7b2619;
+}
+
+.qr-placeholder p {
+    font-size: 12px;
+}
+
+/* REVIEWS */
+
+.review-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #8b2d20;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* ABOUT */
+
+.about-section {
+    background: #f5e9d8;
+}
+
+.about-section p {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-section h3 {
+    margin-top: 20px;
+    color: #9b4a18;
+}
+
+/* CONTACT */
+
+.contact-section {
+    background: #4a1911;
+    color: white;
+}
+
+.contact-section .section-title {
+    color: #f7d58a;
+}
+
+.holiday {
+    color: #ffd27a;
+    font-weight: bold;
+}
+
+/* BUTTONS */
+
+.whatsapp-btn,
+.map-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    margin: 12px 5px;
+    font-weight: bold;
+}
+
+.whatsapp-btn {
+    background: #25d366;
+    color: white;
+}
+
+.map-btn {
+    background: #e5b65d;
+    color: #3c180e;
+}
+
+/* FLOATING WHATSAPP */
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 1000;
+}
+
+/* FOOTER */
+
+footer {
+    background: #2d100b;
+    color: #f7d58a;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .food-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 5%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0;
+        gap: 12px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hero-content {
+        padding: 85px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .food-card img {
+        height: 145px;
+    }
+
+    .food-card h3 {
+        font-size: 14px;
+    }
+
+    .food-card p {
+        font-size: 12px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-grid img {
+        height: 145px;
+    }
+
+    .floating-whatsapp {
+        width: 48px;
+        height: 48px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ಮನು ಮೆಸ್ | Manu Mess</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero" id="home">
+
+    <nav class="navbar">
+        <h2>🍛 ಮನು ಮೆಸ್</h2>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">ಮುಖಪುಟ</a>
+            <a href="#breakfast">ಬೆಳಗಿನ ಉಪಹಾರ</a>
+            <a href="#lunch">ಮಧ್ಯಾಹ್ನದ ಊಟ</a>
+            <a href="#special">ಇಂದಿನ ವಿಶೇಷ</a>
+            <a href="#gallery">ಚಿತ್ರಗಳು</a>
+            <a href="#about">ನಮ್ಮ ಬಗ್ಗೆ</a>
+            <a href="#contact">ಸಂಪರ್ಕ</a>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <h1>ಮನು ಮೆಸ್</h1>
+        <h2>ದಕ್ಷಿಣ ಭಾರತೀಯ ಉಪಹಾರ ಮತ್ತು ತಿಂಡಿಗಳು</h2>
+        <p>ಮನೆಯ ರುಚಿ, ಮನದ ತೃಪ್ತಿ ❤️</p>
+
+        <a href="#breakfast" class="main-btn">ಮೆನು ನೋಡಿ</a>
+    </div>
+
+</header>
+
+
+<!-- BREAKFAST MENU -->
+
+<section id="breakfast" class="section">
+
+    <h2 class="section-title">🍽️ ಬೆಳಗಿನ ಉಪಹಾರ ಮತ್ತು ತಿಂಡಿಗಳು</h2>
+
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">ಎಲ್ಲಾ</button>
+        <button class="filter-btn" data-category="breakfast">ಉಪಹಾರ</button>
+        <button class="filter-btn" data-category="dosa">ದೋಸೆ</button>
+        <button class="filter-btn" data-category="rice">ರೈಸ್‌ಬಾತ್</button>
+        <button class="filter-btn" data-category="vada">ವಡೆ</button>
+        <button class="filter-btn" data-category="special">ವಿಶೇಷ</button>
+    </div>
+
+    <div class="food-grid" id="foodGrid"></div>
+
+</section>
+
+
+<!-- LUNCH MENU -->
+
+<section id="lunch" class="section lunch-section">
+
+    <h2 class="section-title">🍛 ಮಧ್ಯಾಹ್ನದ ಊಟ</h2>
+
+    <div class="food-grid">
+
+        <div class="food-card">
+            <img src="images/ragi-mudde-meals.png" alt="Ragi mudde meals">
+            <h3>ರಾಗಿ ಮುದ್ದೆ ಊಟ</h3>
+            <p>ರಾಗಿ ಮುದ್ದೆ, ಉಪ್ಪುಸಾರು, ಅನ್ನ, ಸಾಂಬಾರ್, ರಸಂ, ಪಲ್ಯ, ಪಕೋಡ, ಹಪ್ಪಳ ಮತ್ತು ಮಜ್ಜಿಗೆ.</p>
+            <h3 class="price">₹70</h3>
+            <span class="availability">ಲಭ್ಯತೆಗಾಗಿ ಸಂಪರ್ಕಿಸಿ</span>
+        </div>
+
+        <div class="food-card">
+            <img src="images/chapati-meals.png" alt="Chapati meals">
+            <h3>ಚಪಾತಿ ಊಟ</h3>
+            <p>ಚಪಾತಿ, ಸಾಗು, ಅನ್ನ, ಸಾಂಬಾರ್, ರಸಂ, ಪಲ್ಯ, ಪಕೋಡ, ಹಪ್ಪಳ ಮತ್ತು ಮಜ್ಜಿಗೆ.</p>
+            <h3 class="price">₹70</h3>
+            <span class="availability">ಲಭ್ಯತೆಗಾಗಿ ಸಂಪರ್ಕಿಸಿ</span>
+        </div>
+
+        <div class="food-card">
+            <img src="images/mini-meals.png" alt="Mini meals">
+            <h3>ಮಿನಿ ಊಟ</h3>
+            <p>ಅನ್ನ, ಸಾಂಬಾರ್, ರಸಂ, ಮಜ್ಜಿಗೆ, ಹಪ್ಪಳ ಮತ್ತು ಪಲ್ಯ.</p>
+            <h3 class="price">₹50</h3>
+            <span class="availability">ಲಭ್ಯತೆಗಾಗಿ ಸಂಪರ್ಕಿಸಿ</span>
+        </div>
+
+        <div class="food-card">
+            <img src="images/pakoda-vada-bonda.png" alt="Pakoda vada bonda">
+            <h3>ಪಕೋಡ / ಮಸಾಲೆ ವಡೆ / ಬೋಂಡಾ</h3>
+            <p>1 ಪ್ಲೇಟ್</p>
+            <h3 class="price">₹20</h3>
+            <span class="availability">ಲಭ್ಯತೆಗಾಗಿ ಸಂಪರ್ಕಿಸಿ</span>
+        </div>
+
+        <div class="food-card">
+            <img src="images/extra-items.png" alt="Extra items">
+            <h3>ಹೆಚ್ಚುವರಿ</h3>
+            <p>ರಾಗಿ ಮುದ್ದೆ – 1 ಸಂಖ್ಯೆ ₹30</p>
+            <p>ಚಪಾತಿ – 1 ಸಂಖ್ಯೆ ₹30</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TODAY'S SPECIAL -->
+
+<section id="special" class="section special-section">
+
+    <h2 class="section-title">⭐ ಇಂದಿನ ವಿಶೇಷ</h2>
+
+    <div class="special-card">
+        <div>
+            <h3 id="todayName">ಇಂದಿನ ವಿಶೇಷ</h3>
+            <p id="todayDescription">ಪ್ರತಿದಿನದ ವಿಶೇಷ ತಿಂಡಿಗಳನ್ನು ಇಲ್ಲಿ ನೋಡಿ.</p>
+            <p id="todayPrice"></p>
+        </div>
+    </div>
+
+    <p class="small-note">
+        ಆಹಾರ ಲಭ್ಯತೆಯನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು WhatsApp ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ.
+    </p>
+
+</section>
+
+
+<!-- AVAILABILITY -->
+
+<section class="section">
+
+    <h2 class="section-title">📢 ಆಹಾರದ ಲಭ್ಯತೆ</h2>
+
+    <p class="center-text">
+        ಕೆಲವು ತಿಂಡಿಗಳು ನಿರ್ದಿಷ್ಟ ದಿನಗಳಲ್ಲಿ ಮಾತ್ರ ಲಭ್ಯವಿರುತ್ತವೆ.
+        ಇಂದಿನ ಮೆನು ಮತ್ತು ಲಭ್ಯತೆಯನ್ನು ತಿಳಿದುಕೊಳ್ಳಲು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ.
+    </p>
+
+    <a class="whatsapp-btn"
+       href="https://wa.me/919449184761?text=ನಮಸ್ಕಾರ%2C%20ಇಂದಿನ%20ಆಹಾರದ%20ಲಭ್ಯತೆ%20ತಿಳಿಸಿ."
+       target="_blank">
+        WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ
+    </a>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery" class="section">
+
+    <h2 class="section-title">📸 ನಮ್ಮ ಆಹಾರದ ಚಿತ್ರಗಳು</h2>
+
+    <div class="gallery-grid">
+
+        <img src="images/idli.jpg" alt="Idli">
+        <img src="images-missing-placeholder.jpg" alt="Food photo" onerror="this.style.display='none'">
+        <img src="images/masala-dosa.jpg" alt="Masala dosa">
+        <img src="images/ragi-mudde-meals.png" alt="Ragi mudde meals">
+        <img src="images/chapati-meals.png" alt="Chapati meals">
+        <img src="images/mini-meals.png" alt="Mini meals">
+
+    </div>
+
+</section>
+
+
+<!-- QR CODE -->
+
+<section class="section qr-section">
+
+    <h2 class="section-title">📱 ನಮ್ಮ ಮೆನುವನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ</h2>
+
+    <p>ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ಲೈವ್ ಆದ ನಂತರ ಇಲ್ಲಿ ನಿಮ್ಮ ಮೆನು QR ಕೋಡ್ ಕಾಣಿಸುತ್ತದೆ.</p>
+
+    <div class="qr-placeholder">
+        <span>QR</span>
+        <p>ವೆಬ್‌ಸೈಟ್ ಲಿಂಕ್ ಸೇರಿಸಿದ ನಂತರ QR ಕೋಡ್ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.</p>
+    </div>
+
+</section>
+
+
+<!-- GOOGLE REVIEWS -->
+
+<section class="section reviews-section">
+
+    <h2 class="section-title">⭐ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ನಮಗೆ ಮುಖ್ಯ</h2>
+
+    <p>
+        ಮನು ಮೆಸ್‌ನ ಆಹಾರ ನಿಮಗೆ ಇಷ್ಟವಾದರೆ ನಿಮ್ಮ ಅಮೂಲ್ಯವಾದ ಅಭಿಪ್ರಾಯವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.
+    </p>
+
+    <a href="#" class="review-btn" id="reviewButton">
+        Google ನಲ್ಲಿ Review ನೀಡಿ
+    </a>
+
+    <p class="small-note">
+        Google Review ಲಿಂಕ್ ಸೇರಿಸಿದ ನಂತರ ಈ ಬಟನ್ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
+    </p>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section about-section">
+
+    <h2 class="section-title">❤️ ನಮ್ಮ ಬಗ್ಗೆ</h2>
+
+    <p>
+        ಮನು ಮೆಸ್‌ನಲ್ಲಿ ನಿಮಗೆ ರುಚಿಕರವಾದ ದಕ್ಷಿಣ ಭಾರತೀಯ ಉಪಹಾರ,
+        ತಿಂಡಿಗಳು ಮತ್ತು ಮಧ್ಯಾಹ್ನದ ಊಟವನ್ನು ಪ್ರೀತಿಯಿಂದ ನೀಡಲಾಗುತ್ತದೆ.
+        ಮನೆಯ ರುಚಿ ಮತ್ತು ಉತ್ತಮ ಸೇವೆಯೇ ನಮ್ಮ ಆದ್ಯತೆ.
+    </p>
+
+    <h3>ಮನೆಯ ರುಚಿ, ಮನದ ತೃಪ್ತಿ ❤️</h3>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section contact-section">
+
+    <h2 class="section-title">📞 ಸಂಪರ್ಕಿಸಿ</h2>
+
+    <p><strong>ಮನು ಮೆಸ್</strong></p>
+
+    <p>ಸಮಯ: ಬೆಳಿಗ್ಗೆ 7:00 ರಿಂದ ಸಂಜೆ 4:00 ರವರೆಗೆ</p>
+
+    <p>ಸೋಮವಾರದಿಂದ ಶನಿವಾರದವರೆಗೆ</p>
+
+    <p class="holiday">ಪ್ರತಿ ಭಾನುವಾರ ರಜೆ</p>
+
+    <a href="https://wa.me/919449184761"
+       target="_blank"
+       class="whatsapp-btn">
+        WhatsApp ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ
+    </a>
+
+    <a href="https://maps.app.goo.gl/nBRWCxW6zm8jfegZ9"
+       target="_blank"
+       class="map-btn">
+        Google Maps ನಲ್ಲಿ ಸ್ಥಳ ನೋಡಿ
+    </a>
+
+</section>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="floating-whatsapp"
+   href="https://wa.me/919449184761"
+   target="_blank"
+   aria-label="WhatsApp">
+    ☎
+</a>
+
+
+<footer>
+    <p>© 2026 ಮನು ಮೆಸ್ | ಮನೆಯ ರುಚಿ, ಮನದ ತೃಪ್ತಿ ❤️</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
